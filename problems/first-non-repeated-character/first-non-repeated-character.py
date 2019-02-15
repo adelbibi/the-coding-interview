@@ -10,6 +10,11 @@ def non_repeating(chars):
         if it == 0 and r != 0:
             return chars[i-1]
           
+    if len(chars) % 2 == 0:
+        return False
+    else:
+        return chars[-1]
+          
 
 def non_repeating2(string):
   """
